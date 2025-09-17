@@ -37,7 +37,12 @@ function UnitsDropdown({ units, setUnits, className }) {
     <div className={`dropdown ${className || ""}`} ref={dropdownRef}>
       <button className="dropdown-button" onClick={() => setOpen(!open)}>
         <img className="settings-icon" src="icon-units.svg" alt="Settings" />{" "}
-        Units <img className="down-arrow" src="icon-dropdown.svg" alt="Units" />
+        Units{" "}
+        <img
+          className="down-arrow"
+          src="/FrontendMentor-Weather-App/icon-dropdown.svg"
+          alt="Units"
+        />
       </button>
       {open && (
         <div className="dropdown-menu">

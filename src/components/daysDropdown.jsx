@@ -26,7 +26,11 @@ function DaysDropdown({
       {/* Button that toggles dropdown */}
       <button className="dropdown-button" onClick={() => setOpen(!open)}>
         {selectedDay || "Select Day"}{" "}
-        <img className="down-arrow" src="icon-dropdown.svg" alt="Select day" />
+        <img
+          className="down-arrow"
+          src="/FrontendMentor-Weather-App/icon-dropdown.svg"
+          alt="Select day"
+        />
       </button>
 
       {open && (

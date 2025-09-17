@@ -93,34 +93,34 @@ function App() {
 
   const getWeatherIcon = (code) => {
     const codeMap = {
-      0: "icon-sunny.webp", // Clear sky
-      1: "icon-sunny.webp", // Mainly clear
-      2: "icon-partly-cloudy.webp", // Partly cloudy
-      3: "icon-overcast.webp", // Overcast
-      45: "icon-fog.webp", // Fog
-      48: "icon-fog.webp", // Depositing rime fog
-      51: "icon-drizzle.webp", // Drizzle: Light
-      53: "icon-drizzle.webp", // Drizzle: Moderate
-      55: "icon-drizzle.webp", // Drizzle: Dense intensity
-      56: "icon-drizzle.webp", // Freezing Drizzle: Light
-      57: "icon-drizzle.webp", // Freezing Drizzle: Dense intensity
-      61: "icon-rain.webp", // Rain: Slight
-      63: "icon-rain.webp", // Rain: Moderate
-      65: "icon-rain.webp", // Rain: Heavy intensity
-      66: "icon-rain.webp", // Freezing Rain: Light
-      67: "icon-rain.webp", // Freezing Rain: Heavy intensity
-      71: "icon-snow.webp", // Snow fall: Slight
-      73: "icon-snow.webp", // Snow fall: Moderate
-      75: "icon-snow.webp", // Snow fall: Heavy intensity
-      77: "icon-snow.webp", // Snow grains
-      80: "icon-rain.webp", // Rain showers: Slight
-      81: "icon-rain.webp", // Rain showers: Moderate
-      82: "icon-rain.webp", // Rain showers: Violent
-      85: "icon-snow.webp", // Snow showers slight
-      86: "icon-snow.webp", // Snow showers heavy
-      95: "icon-storm.webp", // Thunderstorm: Slight or moderate
-      96: "icon-storm.webp", // Thunderstorm with slight hail
-      99: "icon-storm.webp", // Thunderstorm with heavy hail
+      0: "/FrontendMentor-Weather-App/icon-sunny.webp", // Clear sky
+      1: "/FrontendMentor-Weather-App/icon-sunny.webp", // Mainly clear
+      2: "/FrontendMentor-Weather-App/icon-partly-cloudy.webp", // Partly cloudy
+      3: "/FrontendMentor-Weather-App/icon-overcast.webp", // Overcast
+      45: "/FrontendMentor-Weather-App/icon-fog.webp", // Fog
+      48: "/FrontendMentor-Weather-App/icon-fog.webp", // Depositing rime fog
+      51: "/FrontendMentor-Weather-App/icon-drizzle.webp", // Drizzle: Light
+      53: "/FrontendMentor-Weather-App/icon-drizzle.webp", // Drizzle: Moderate
+      55: "/FrontendMentor-Weather-App/icon-drizzle.webp", // Drizzle: Dense intensity
+      56: "/FrontendMentor-Weather-App/icon-drizzle.webp", // Freezing Drizzle: Light
+      57: "/FrontendMentor-Weather-App/icon-drizzle.webp", // Freezing Drizzle: Dense intensity
+      61: "/FrontendMentor-Weather-App/icon-rain.webp", // Rain: Slight
+      63: "/FrontendMentor-Weather-App/icon-rain.webp", // Rain: Moderate
+      65: "/FrontendMentor-Weather-App/icon-rain.webp", // Rain: Heavy intensity
+      66: "/FrontendMentor-Weather-App/icon-rain.webp", // Freezing Rain: Light
+      67: "/FrontendMentor-Weather-App/icon-rain.webp", // Freezing Rain: Heavy intensity
+      71: "/FrontendMentor-Weather-App/icon-snow.webp", // Snow fall: Slight
+      73: "/FrontendMentor-Weather-App/icon-snow.webp", // Snow fall: Moderate
+      75: "/FrontendMentor-Weather-App/icon-snow.webp", // Snow fall: Heavy intensity
+      77: "/FrontendMentor-Weather-App/icon-snow.webp", // Snow grains
+      80: "/FrontendMentor-Weather-App/icon-rain.webp", // Rain showers: Slight
+      81: "/FrontendMentor-Weather-App/icon-rain.webp", // Rain showers: Moderate
+      82: "/FrontendMentor-Weather-App/icon-rain.webp", // Rain showers: Violent
+      85: "/FrontendMentor-Weather-App/icon-snow.webp", // Snow showers slight
+      86: "/FrontendMentor-Weather-App/icon-snow.webp", // Snow showers heavy
+      95: "/FrontendMentor-Weather-App/icon-storm.webp", // Thunderstorm: Slight or moderate
+      96: "/FrontendMentor-Weather-App/icon-storm.webp", // Thunderstorm with slight hail
+      99: "/FrontendMentor-Weather-App/icon-storm.webp", // Thunderstorm with heavy hail
     };
     return codeMap[Number(code)];
   };
@@ -175,7 +175,11 @@ function App() {
   return (
     <div className="app-container">
       <div className="header">
-        <img src="logo.svg" alt="Weather App Logo" className="logo" />
+        <img
+          src="/FrontendMentor-Weather-App/logo.svg"
+          alt="Weather App Logo"
+          className="logo"
+        />
         <UnitsDropdown
           className="units-btn"
           units={units}
@@ -385,7 +389,10 @@ function App() {
         ) : error ? (
           <div className="error-state">
             <div className="error-icon">
-              <img src="icon-error.svg" alt="Error" />
+              <img
+                src="/FrontendMentor-Weather-App/icon-error.svg"
+                alt="Error"
+              />
             </div>
             <p className="error-message">Something went wrong</p>
             <p className="api-error">
@@ -393,7 +400,11 @@ function App() {
               a few moments.
             </p>
             <button className="retry-btn" onClick={handleRetry}>
-              <img className="retry-icon" src="icon-retry.svg" /> Retry
+              <img
+                className="retry-icon"
+                src="/FrontendMentor-Weather-App/icon-retry.svg"
+              />{" "}
+              Retry
             </button>
           </div>
         ) : null}
