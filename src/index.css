@@ -98,7 +98,7 @@ body {
 }
 
 .weather-card {
-  background: url('./src/assets/images/bg-today-large.svg') no-repeat;
+  background: url('/FrontendMentor-Weather-App/bg-today-large.svg') no-repeat;
   background-size: contain;
   border-radius: 20px;
   padding: 32px 40px;
@@ -312,21 +312,21 @@ body {
 }
 
 .hourly-list::-webkit-scrollbar {
-  width: 8px;           /* Scrollbar width */
+  width: 8px;
 }
 
 .hourly-list::-webkit-scrollbar-track {
-  background: hsl(243, 23%, 24%);  /* Track color */
+  background: hsl(243, 23%, 24%);
   border-radius: 4px;
 }
 
 .hourly-list::-webkit-scrollbar-thumb {
-  background: hsl(243, 23%, 50%);  /* Thumb color */
+  background: hsl(243, 23%, 50%); 
   border-radius: 4px;
 }
 
 .hourly-list::-webkit-scrollbar-thumb:hover {
-  background: hsl(243, 23%, 60%);  /* Hover color */
+  background: hsl(243, 23%, 60%); 
 }
 
 .no-result {
@@ -510,7 +510,7 @@ body {
   }
 
   .weather-card {
-    background: url(./assets/images/bg-today-small.svg);
+    background: url('/FrontendMentor-Weather-App/bg-today-small.svg') no-repeat;
     background-size: contain;
   }
 
@@ -545,17 +545,15 @@ body {
     min-width: 140px;
   }
 
-  /* Daily forecast scrolls horizontally */
   .daily-forecast-row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     
   }
 
-  /* Center the last item if there are 7 total */
   .daily-forecast-row > :last-child {
-    grid-column: 1; /* puts it in the middle column */
+    grid-column: 1;
   }
 
   .daily-box,
@@ -564,7 +562,6 @@ body {
     width: 89px;
   }
 
-  /* Hourly forecast takes full width */
   .hourly-forecast {
     width: 85%;
     max-width: 85%;
