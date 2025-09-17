@@ -491,11 +491,11 @@ body {
   }
 
   .search-bar input {
-    width: 130%;
+    width: 100%;
   }
 
   .search-bar button {
-    width: 145%;
+    width: 100%;
   }
 
   .main-content {
