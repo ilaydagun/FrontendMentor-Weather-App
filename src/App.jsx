@@ -234,7 +234,9 @@ function App() {
                           style={{ verticalAlign: "middle" }}
                         />
                       </span>
-                      {weather.current.temperature_2m}°
+                      {`${Math.round(
+                        convertTemperature(weather.current.temperature_2m)
+                      )}°`}
                     </div>
                   </div>
                 </div>
@@ -277,8 +279,16 @@ function App() {
                     {weather.daily.time.slice(0, 7).map((time, i) => (
                       <DailyForecastCard
                         time={time}
-                        tempMax={weather.daily.temperature_2m_max[i]}
-                        tempMin={weather.daily.temperature_2m_min[i]}
+                        tempMax={`${Math.round(
+                          convertTemperature(
+                            weather.daily.temperature_2m_max[i]
+                          )
+                        )}°`}
+                        tempMin={`${Math.round(
+                          convertTemperature(
+                            weather.daily.temperature_2m_min[i]
+                          )
+                        )}°`}
                         weatherCode={weather.daily.weather_code[i]}
                         getWeatherIcon={getWeatherIcon}
                       />
@@ -317,7 +327,9 @@ function App() {
                                   }
                                 )}
                               </span>
-                              <span className="hourly-temp">{hour.temp}°</span>
+                              <span className="hourly-temp">{`${Math.round(
+                                convertTemperature(hour.temp)
+                              )}°`}</span>
                             </li>
                           ))
                         : "Loading hourly data..."}
