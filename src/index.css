@@ -202,7 +202,7 @@ body {
 
 .daily-forecast-row {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
@@ -212,7 +212,7 @@ body {
   border-radius: 8px;
   padding: 8px;
   text-align: center;
-  width: 74px;
+  width: 78px;
   height: 140px;
   flex: 0 0 auto;
   
@@ -263,7 +263,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 5px;
 }
 
 .hourly-title {
@@ -275,7 +275,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  max-height: 510px;
+  max-height: 500px;
   overflow-y: auto;
   overflow-x: hidden;
   border-radius: 8px;
@@ -361,7 +361,7 @@ body {
   border-radius: 8px;
   padding: 8px;
   text-align: center;
-  width: 74px;
+  width: 78px;
   height: 140px;
   flex: 0 0 auto;
   
