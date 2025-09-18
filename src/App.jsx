@@ -283,12 +283,12 @@ function App() {
                           convertTemperature(
                             weather.daily.temperature_2m_max[i]
                           )
-                        )}°`}
+                        )}`}
                         tempMin={`${Math.round(
                           convertTemperature(
                             weather.daily.temperature_2m_min[i]
                           )
-                        )}°`}
+                        )}`}
                         weatherCode={weather.daily.weather_code[i]}
                         getWeatherIcon={getWeatherIcon}
                       />
