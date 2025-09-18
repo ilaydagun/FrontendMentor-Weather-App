@@ -35,6 +35,7 @@ body {
   border-radius: 8px;
   padding: 8px 16px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .title {
@@ -399,6 +400,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  padding: 0;
 }
 
 .dropdown-button {
@@ -406,7 +408,7 @@ body {
   color: hsl(0, 0%, 100%);
   border: none;
   border-radius: 8px;
-  padding: 8px 16px;
+  padding: 16px 16px;
   cursor: pointer;
 }
 
@@ -453,6 +455,7 @@ body {
 .dropdown-item.active {
   background: hsl(243, 23%, 30%);
   color: white;
+  border-color: hsl(0, 0%, 100%); 
 }
 
 .dropdown-item.top {
@@ -472,6 +475,14 @@ body {
 .error-icon img {
   width: 32px;
   height: 32px;
+}
+
+.search-bar input:active{
+  border-color: hsl(0, 0%, 100%);
+}
+
+.search-bar button:hover {
+  background-color: hsl(248, 70%, 36%);
 }
 
 @media (max-width: 900px) {
